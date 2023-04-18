@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap");
+    </style>
+    <title>Encriptador de texto - Alura Challenges ONE</title>
+  </head>
+  <body class="body">
+    
+    <div class="container">
+      <div class="logo">
+        <img class="logoImg" src="img/Vector.png" alt="" />
+      </div>
+      <div class="left">
+        <textarea
+          wrap="soft"
+          class="textInput"
+          id="textoMensaje"
+          cols="30"
+          rows="30"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+          <p>Solo minusculas y sin acentos</p>
+          <button type="button" id="btnEncriptar">Encriptar!</button>
+          <button type="button" id="btnDesencriptar">Desencriptar!</button>
+      </div>
+      <div class="rigth">
+        <img id="imgDer" src="img/Muñeco.png" alt="muneco.png" />
+        <h1 id="texto">Ningun mensaje fue encontrado</h1>
+        <p class="tp" id="txp">
+          Ingresa el texto que desees encriptar o desencriptar.
+        </p>
+        <textarea readonly hidden name="" id="texto2" cols="30" rows="10"></textarea>
+        <button hidden type="button" id="btncopiar">Copiar</button>
+      </div>
+    </div>
+    <footer>Axel Omar Arredondo Viera:)</footer>
+  </body>
+  <script src="./Encriptar.js"></script>
+</html>
